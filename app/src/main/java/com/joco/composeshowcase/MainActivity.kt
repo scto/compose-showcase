@@ -35,6 +35,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.joco.compose_showcaseview.ShowcaseAlignment
+import com.joco.compose_showcaseview.ShowcaseDuration
 import com.joco.compose_showcaseview.ShowcasePosition
 import com.joco.compose_showcaseview.highlight.ShowcaseHighlight
 import com.joco.composeshowcase.ui.theme.ComposeShowcaseTheme
@@ -114,6 +115,7 @@ fun SequenceShowcaseScope.MainContent(
                     .align(Alignment.Start)
                     .sequenceShowcaseTarget(
                         index = 1,
+                        duration = ShowcaseDuration(300, 200),
                         highlight = ShowcaseHighlight.Rectangular(24.dp),
                         content = {
                             MyShowcaseDialog(
